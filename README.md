@@ -565,20 +565,7 @@ df1.profile_report()
 
 
 
-                <iframe
-                    width="100%"
-                    height="800px"
-                    srcdoc="&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;Profile report generated with the `pandas-profiling` Python package&quot;&gt;
-    &lt;meta name=&quot;author&quot; content=&quot;Jos Polfliet, Simon Brugman and the open source community.&quot;&gt;
-    &lt;meta name=&quot;generator&quot; content=&quot;Pandas Profiling 2.1.2&quot; /&gt;
-    &lt;meta name=&quot;url&quot; content=&quot;https://github.com/pandas-profiling/pandas-profiling&quot;&gt;
 
-    &lt;title&gt;Pandas Profiling Report&lt;/title&gt;
 
 &lt;style&gt;
 /*!
