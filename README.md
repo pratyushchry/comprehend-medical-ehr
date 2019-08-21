@@ -410,7 +410,7 @@ medical_resume_wordcloud(text)
 ```
 
 
-![png](output_19_0.png)
+![png](/images/output_19_0.png)
 
 
 
@@ -419,7 +419,7 @@ medical_resume_wordcloud(diagnosis)
 ```
 
 
-![png](output_20_0.png)
+![png](/images/output_20_0.png)
 
 
 
@@ -428,7 +428,7 @@ medical_resume_wordcloud(medication)
 ```
 
 
-![png](output_21_0.png)
+![png](/images/output_21_0.png)
 
 
 
@@ -437,7 +437,7 @@ medical_resume_wordcloud(symptoms)
 ```
 
 
-![png](output_22_0.png)
+![png](/images/output_22_0.png)
 
 
 ### Creating a Dataframe containing - diagnosis, symptoms and medications
