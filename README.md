@@ -46,38 +46,6 @@ Following the installation of the packages, we'd be required to import the Pytho
 ! pip install matplotlib
 ```
 
-    Collecting PyPandoc
-      Downloading https://files.pythonhosted.org/packages/71/81/00184643e5a10a456b4118fc12c96780823adb8ed974eb2289f29703b29b/pypandoc-1.4.tar.gz
-    Requirement already satisfied: setuptools in /usr/lib/python3.6/dist-packages (from PyPandoc) (36.2.7)
-    Requirement already satisfied: pip>=8.1.0 in /usr/lib/python3.6/dist-packages (from PyPandoc) (19.0.2)
-    Requirement already satisfied: wheel>=0.25.0 in /usr/lib/python3.6/dist-packages (from PyPandoc) (0.32.3)
-    Building wheels for collected packages: PyPandoc
-      Building wheel for PyPandoc (setup.py) ... [?25ldone
-    [?25h  Stored in directory: /home/ec2-user/.cache/pip/wheels/3e/55/4f/59e0fa0914f3db52e87c0642c5fb986871dfbbf253026e639f
-    Successfully built PyPandoc
-    Installing collected packages: PyPandoc
-    Successfully installed PyPandoc-1.4
-    [33mYou are using pip version 19.0.2, however version 19.1.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-    Requirement already satisfied: wordcloud in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (1.5.0)
-    Requirement already satisfied: pillow in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from wordcloud) (5.2.0)
-    Requirement already satisfied: numpy>=1.6.1 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from wordcloud) (1.15.4)
-    [31mautovizwidget 0.12.7 has requirement plotly<3.0,>=1.10.0, but you'll have plotly 3.10.0 which is incompatible.[0m
-    [33mYou are using pip version 10.0.1, however version 19.1.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-    Requirement already satisfied: matplotlib in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (3.0.3)
-    Requirement already satisfied: numpy>=1.10.0 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from matplotlib) (1.15.4)
-    Requirement already satisfied: cycler>=0.10 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from matplotlib) (0.10.0)
-    Requirement already satisfied: kiwisolver>=1.0.1 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from matplotlib) (1.0.1)
-    Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from matplotlib) (2.2.0)
-    Requirement already satisfied: python-dateutil>=2.1 in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from matplotlib) (2.7.3)
-    Requirement already satisfied: six in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from cycler>=0.10->matplotlib) (1.11.0)
-    Requirement already satisfied: setuptools in /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages (from kiwisolver>=1.0.1->matplotlib) (39.1.0)
-    [31mautovizwidget 0.12.7 has requirement plotly<3.0,>=1.10.0, but you'll have plotly 3.10.0 which is incompatible.[0m
-    [33mYou are using pip version 10.0.1, however version 19.1.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-
-
 ```python
 from botocore.vendored import requests
 import json
@@ -479,18 +447,6 @@ The feature is particularly useful when you have a dataset has a lot of variety 
 import pandas_profiling
 df1.profile_report()
 ```
-
-    /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages/matplotlib/font_manager.py:1241: UserWarning: findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
-      (prop.get_family(), self.defaultFamily[fontext]))
-    /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages/matplotlib/font_manager.py:1241: UserWarning: findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
-      (prop.get_family(), self.defaultFamily[fontext]))
-    /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages/matplotlib/font_manager.py:1241: UserWarning: findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
-      (prop.get_family(), self.defaultFamily[fontext]))
-    /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages/matplotlib/font_manager.py:1241: UserWarning: findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
-      (prop.get_family(), self.defaultFamily[fontext]))
-    /home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/lib/python3.6/site-packages/matplotlib/font_manager.py:1241: UserWarning: findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
-      (prop.get_family(), self.defaultFamily[fontext]))
-
 
 ## Generating a Medical Resume from the raw clinical notes
 
@@ -1028,17 +984,6 @@ audio_obj = s3.get_object(Bucket=bucket, Key=key)
 audio = audio_obj["Body"].read()
 Audio(audio)
 ```
-
-
-
-
-
-                <audio controls="controls" >
-                    Your browser does not support the audio element.
-                </audio>
-
-
-
 
 Now we will be creating a job in the Amazon Transcription (which is our Speech Recognition tool). This job will help us get the transcript of the audio file we just played.
 
